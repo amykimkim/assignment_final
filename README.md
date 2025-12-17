@@ -1,1 +1,2 @@
 # assignment_final
+This project aims to build an AI-powered assistant for doctors that automatically reviews medical scans (X-rays, CT, or MRIs) to find potential health problems. It takes in raw images, carefully removes the patient's personal name and address to keep things private, and then uses AI to highlight areas of concern, such as a tumor or a bone fracture. By handling the repetitive work of organizing and pre-scanning these images, the system helps doctors see the most urgent cases faster, reducing wait times and making sure nothing important is missed.

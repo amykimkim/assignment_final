@@ -1,0 +1,9 @@
+
+I am most confident in the data flow of the pipeline. Using a storage upload as a "trigger" for a serverless function is a tested cloud design pattern. It is highly scalable, cost-effective, and provides a clear audit trail. Even if the AI service fails, the raw data is already safely stored. This step-by-step and layered approach makes it very easy. You can check the logs of one specific function without worrying about the entire system crashing.
+The area I am least sure about is the resource tuning for the Containerized AI Service, specifically when trying to balance performance with a "student budget."
+Medical images (especially 3D CT or MRI) are "heavy." Most "Free Tier" or "Serverless Container" options have strict limits on memory and CPU, which would make it difficult to scale this on a larger level. 
+
+An alternative architecture I did not choose was related to remote patient vitals monitoring, which focuses on real-time streaming data from wearable devices rather than static image files. Although it's great for learning live data analytics, it lacks the complex computer vision challenges and the heavy containerized compute requirements that the medical imaging project provides for this assignment. I was able to inccorporate more layers and topics I learned throughout the semester into the medical imaging pipeline.
+
+If I had 4-8 more weeks to work on this pipeline, my next steps would be interoperability integration.
+Right now, the pipeline "simulates" ingestion by having a clinic upload to an endpoint. In a real hospital, you’d need to integrate directly with existing infrastructure. Therefore, next steps would be to have better interoperability by figuring out how this pipeline can be triggered as soon as the imaging is completed by each respective machines.
